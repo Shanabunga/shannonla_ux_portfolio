@@ -59,6 +59,19 @@ header.hero {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* ✅ New style for your cartoon image without a border */
+.profile-pic {
+  width: 150px;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  box-shadow: none;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
