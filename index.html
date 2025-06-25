@@ -5,38 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shannon Wilson — UX Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
+  <style>
+    :root {
+      --primary: #4456DD;
+      --primary-variant: #D1DEFF;
+      --secondary: #56EAE3;
+      --secondary-variant: #DBFCFF;
+      --background: #FFFFFF;
+      --error: #F4FF30;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--background);
+      color: #222;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+      background-color: var(--primary-variant);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #444;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project-card {
+      background-color: var(--secondary-variant);
+      border: 2px solid var(--primary);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .project-summary {
+      margin: 1rem 0;
+      font-size: 1.05rem;
+    }
+
+    .project-tags {
+      margin: 1rem 0;
+    }
+
+    .project-tags strong {
+      display: inline-block;
+      width: 100px;
+      font-weight: 600;
+    }
+
+    .view-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
+
 <body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Hello, I'm <span class="highlight">Shannon</span></h1>
-      <p>UX Designer & Data Visualization Storyteller</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-    <div class="hero-image">
-      <img src="assets/images/shannyn.png" alt="Shannyn Wilson portrait">
-    </div>
+
+  <header>
+    <h1>Shannon Wilson</h1>
+    <p>UX Designer & Data Visualization Storyteller</p>
   </header>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>With a background in UX design, business strategy, and data visualization, I craft user-centered solutions that are as functional as they are beautiful. I'm passionate about making data intuitive and engaging through storytelling and design.</p>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Selected Projects</h2>
+  <main>
     <div class="project-card">
-      <h3>Edmonton Housing Price Prediction</h3>
-      <p>A machine learning project predicting housing prices based on key neighborhood and property features.</p>
-      <p class="tools">Tools: Python, pandas, matplotlib</p>
-      <a href="https://www.figma.com/file/XYZ" target="_blank">View Case Study</a>
+      <h2>Quest Gasket</h2>
+      <p class="project-summary">
+        A complete redesign of Quest Gasket’s industrial website, including a new sitemap, e-commerce structure, and UX-focused product navigation system.
+      </p>
+      <div class="project-tags">
+        <p><strong>Project Type:</strong> End-to-end Website + Branding</p>
+        <p><strong>Role:</strong> Sole UX/UI Designer</p>
+        <p><strong>Industry:</strong> Industrial Sealing / Manufacturing</p>
+        <p><strong>Tools:</strong> Balsamiq, Figma</p>
+      </div>
+      <a href="quest-gasket.html" class="view-button">View Project</a>
     </div>
-    <!-- Add more project cards here -->
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 Shannon Wilson • <a href="mailto:youremail@example.com">Contact Me</a></p>
+    &copy; 2025 Shannon Wilson. All rights reserved.
   </footer>
+
 </body>
 </html>
-
