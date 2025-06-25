@@ -3,25 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shannyn Wilson — UX Designer</title>
+  <title>Shannyn Wilson — UX Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <section class="hero">
-    <h1>Hello, I'm Shannyn.</h1>
-    <p>UX Designer and Data Visualization Enthusiast.</p>
-    <a href="#portfolio" class="btn">View My Work</a>
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Hello, I'm <span class="highlight">Shannyn</span></h1>
+      <p>UX Designer & Data Visualization Storyteller</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/shannyn.png" alt="Shannyn Wilson portrait">
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>With a background in UX design, business strategy, and data visualization, I craft user-centered solutions that are as functional as they are beautiful. I'm passionate about making data intuitive and engaging through storytelling and design.</p>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <p><a href="https://www.figma.com/design/3sPR4wmCXAXaOdPYVSFedo/Portfolio?node-id=0-1&p=f&t=AqqQZfX3YiWvVp2x-0" target="_blank">Open Figma Portfolio</a></p>
-    <!-- Optionally embed the Figma preview -->
-    <iframe style="border: 1px solid #ccc;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/3sPR4wmCXAXaOdPYVSFedo/Portfolio?node-id=0-1&t=AqqQZfX3YiWvVp2x-0" allowfullscreen></iframe>
+  <section id="projects" class="projects">
+    <h2>Selected Projects</h2>
+    <div class="project-card">
+      <h3>Edmonton Housing Price Prediction</h3>
+      <p>A machine learning project predicting housing prices based on key neighborhood and property features.</p>
+      <p class="tools">Tools: Python, pandas, matplotlib</p>
+      <a href="https://www.figma.com/file/XYZ" target="_blank">View Case Study</a>
+    </div>
+    <!-- Add more project cards here -->
   </section>
 
   <footer>
-    <p>© 2025 Shannyn Wilson</p>
+    <p>© 2025 Shannyn Wilson • <a href="mailto:youremail@example.com">Contact Me</a></p>
   </footer>
 </body>
 </html>
