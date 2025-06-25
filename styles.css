@@ -1,1 +1,20 @@
+:root {
+  --primary: #4456DD;
+  --primary-variant: #D1DEFF;
+  --secondary: #56EAE3;
+  --secondary-variant: #DBFCFF;
+  --background: #FFFFFF;
+  --error: #F4FF30;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--background);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: var(--primary);
+}
 
