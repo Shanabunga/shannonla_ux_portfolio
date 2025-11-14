@@ -5,152 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shannon Wilson — UX Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
-  <style>
-    :root {
-      --primary: #4456DD;
-      --primary-variant: #D1DEFF;
-      --secondary: #56EAE3;
-      --secondary-variant: #DBFCFF;
-      --background: #FFFFFF;
-      --error: #F4FF30;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: var(--background);
-      color: #222;
-    }
-
-    header {
-      padding: 4rem 2rem 2rem;
-      text-align: center;
-      background-color: var(--primary-variant);
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--primary);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      color: #444;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .project-card {
-      background-color: var(--secondary-variant);
-      border: 2px solid var(--primary);
-      border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-
-    .project-card h2 {
-      margin-top: 0;
-      color: var(--primary);
-    }
-
-    .project-summary {
-      margin: 1rem 0;
-      font-size: 1.05rem;
-    }
-
-    .project-tags {
-      margin: 1rem 0;
-    }
-
-    .project-tags strong {
-      display: inline-block;
-      width: 100px;
-      font-weight: 600;
-    }
-
-    .view-button {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: var(--primary);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
 </head>
 
-<body>
+<body class="case-study-body">
 
-  <header>
-    <h1>Shannon Wilson</h1>
-    <img src="assets/images/shannyn.png" alt="Cartoon of Shannon" class="profile-pic">
-    <p>UX/UI Designer</p>
+  <!-- HEADER / HERO -->
+  <header class="home-header">
+    <div class="home-header-inner">
+      <div class="home-identity">
+        <img src="assets/images/shannyn.png" alt="Cartoon of Shannon" class="profile-pic">
+        <div>
+          <h1>Shannon Wilson</h1>
+          <p class="home-tagline">UX/UI designer crafting clear, intuitive experiences for complex products.</p>
+        </div>
+      </div>
+      <p class="home-subtext">
+        I blend experience in benefits, pensions, SaaS, and data visualization to design interfaces that
+        feel calm and usable, even when the systems behind them are complex.
+      </p>
+    </div>
   </header>
 
-  <main>
-    <div class="project-card">
-      <h2>Quest Gasket</h2>
-      <p class="project-summary">
-        A complete redesign of Quest Gasket’s industrial website, including a new sitemap, e-commerce structure, and UX-focused product navigation system.
-      </p>
-      <div class="project-tags">
-        <p><strong>Project Type:</strong> End-to-end Website + Branding</p>
-        <p><strong>Role:</strong> Sole UX/UI Researcher + Designer</p>
-        <p><strong>Industry:</strong> Industrial Sealing / Manufacturing</p>
-        <p><strong>Tools:</strong> Balsamiq, Figma</p>
-      </div>
-      <a href="quest-gasket.html" class="view-button">View Project</a>
-    </div>
+  <!-- MAIN CONTENT -->
+  <main class="cs-main">
+    <section class="cs-section project-list">
 
-    <div class="project-card">
-      <h2>Flying Wings</h2>
-      <p class="project-summary">
-        Designed a responsive, white-label flight booking experience including search, results, and checkout flow for client onboarding and sales demo.
-      </p>
-      <div class="project-tags">
-        <p><strong>Project Type:</strong> End-to-End Prototype for White Label Platform</p>
-        <p><strong>Role:</strong> Sole UX/UI Researcher + Prototype Creator</p>
-        <p><strong>Industry:</strong> Travel & Tourism (B2B SaaS)</p>
-        <p><strong>Tools:</strong> Balsamiq, Figma, Zoom</p>
-      </div>
-      <a href="flying-wings.html" class="view-button">View Project</a>
-    </div>
+      <article class="project-card">
+        <h2>Quest Gasket</h2>
+        <p class="project-summary">
+          A complete redesign of Quest Gasket’s industrial website, including a new sitemap,
+          e-commerce structure, and UX-focused product navigation system.
+        </p>
+        <div class="project-tags">
+          <p><strong>Project Type:</strong> End-to-end Website + Branding</p>
+          <p><strong>Role:</strong> Sole UX/UI Researcher + Designer</p>
+          <p><strong>Industry:</strong> Industrial Sealing / Manufacturing</p>
+          <p><strong>Tools:</strong> Balsamiq, Figma</p>
+        </div>
+        <a href="quest-gasket.html" class="view-button">View Project</a>
+      </article>
 
-  <div class="project-card">
-    <h2>House of Rock</h2>
-    <p class="project-summary">
-    Redesigned mobile and desktop flows with a modern user profile, social integrations, and login experience for improved usability and visual consistency.
-    </p>
-    <div class="project-tags">
-    <p><strong>Project Type:</strong> UI/UX Design – Mobile + Desktop Screens</p>
-    <p><strong>Role:</strong> Sole UX/UI Researcher + Interaction Strategist</p>
-    <p><strong>Industry:</strong> Travel & Tourism / Social Media</p>
-    <p><strong>Tools:</strong> Figma, Illustrator, Test Flight, Slack</p>
-  </div>
-  <a href="house-of-rock.html" class="view-button">View Project</a>
-</div>
-    
+      <article class="project-card">
+        <h2>Flying Wings</h2>
+        <p class="project-summary">
+          Designed a responsive, white-label flight booking experience including search, results,
+          and checkout flow for client onboarding and sales demos.
+        </p>
+        <div class="project-tags">
+          <p><strong>Project Type:</strong> End-to-End Prototype for White Label Platform</p>
+          <p><strong>Role:</strong> Sole UX/UI Researcher + Prototype Creator</p>
+          <p><strong>Industry:</strong> Travel & Tourism (B2B SaaS)</p>
+          <p><strong>Tools:</strong> Balsamiq, Figma, Zoom</p>
+        </div>
+        <a href="flying-wings.html" class="view-button">View Project</a>
+      </article>
+
+      <article class="project-card">
+        <h2>House of Rock</h2>
+        <p class="project-summary">
+          Redesigning mobile and desktop flows for a concert + travel booking platform with modern
+          profiles, social integrations, and trip-building experiences.
+        </p>
+        <div class="project-tags">
+          <p><strong>Project Type:</strong> UI/UX Design – Mobile + Desktop Screens</p>
+          <p><strong>Role:</strong> Sole UX/UI Researcher + Interaction Strategist</p>
+          <p><strong>Industry:</strong> Travel & Tourism / Social Media</p>
+          <p><strong>Tools:</strong> Figma, Illustrator, TestFlight, Slack</p>
+        </div>
+        <a href="house-of-rock.html" class="view-button">View Project</a>
+      </article>
+
+    </section>
   </main>
 
-  <footer>
-    &copy; 2025 Shannon Wilson. All rights reserved.
+  <footer class="cs-footer">
+    <p>© 2025 Shannon Wilson. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
