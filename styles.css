@@ -106,3 +106,281 @@ footer {
   text-align: center;
   background-color: var(--primary-variant);
 }
+
+/* ---------- Case Study Base ---------- */
+
+.case-study-body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  color: #222;
+  background: #fafafa;
+}
+
+.cs-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.cs-header,
+.cs-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.cs-footer {
+  border-top: 1px solid #e2e2e2;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ---------- Links & Buttons ---------- */
+
+.cs-back-link {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #444;
+}
+
+.cs-back-link:hover {
+  text-decoration: underline;
+}
+
+.cs-primary-btn,
+.cs-secondary-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: 1px solid #222;
+}
+
+.cs-primary-btn {
+  background: #222;
+  color: #fff;
+}
+
+.cs-primary-btn:hover {
+  opacity: 0.9;
+}
+
+.cs-secondary-btn {
+  background: transparent;
+  color: #222;
+}
+
+.cs-secondary-btn:hover {
+  background: #f0f0f0;
+}
+
+/* ---------- Hero ---------- */
+
+.cs-hero {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.cs-label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  color: #888;
+  margin-bottom: 0.25rem;
+}
+
+.cs-hero h1 {
+  font-size: 2.2rem;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.cs-subtitle {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+}
+
+.cs-meta {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  align-self: start;
+}
+
+.cs-meta h2 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.cs-meta dl {
+  margin: 0 0 1rem;
+}
+
+.cs-meta dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+  margin-top: 0.6rem;
+}
+
+.cs-meta dd {
+  margin: 0.1rem 0 0;
+  font-size: 0.9rem;
+}
+
+/* ---------- Sections ---------- */
+
+.cs-section {
+  margin-bottom: 3rem;
+}
+
+.cs-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.cs-section p {
+  line-height: 1.6;
+}
+
+.cs-subsection {
+  margin-top: 1.5rem;
+}
+
+/* ---------- Layout Helpers ---------- */
+
+.cs-two-column {
+  display: grid;
+  gap: 2rem;
+}
+
+.cs-two-column > div {
+  background: #fff;
+  border-radius: 1rem;
+  border: 1px solid #ececec;
+  padding: 1.5rem;
+}
+
+.cs-two-column h2 {
+  margin-top: 0;
+}
+
+.cs-two-column ul {
+  padding-left: 1.1rem;
+}
+
+/* ---------- Figures & Placeholders ---------- */
+
+.cs-figure {
+  margin: 1.2rem 0;
+}
+
+.cs-figure img {
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e2e2;
+}
+
+.cs-figure figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.placeholder-box {
+  width: 100%;
+  min-height: 160px;
+  border-radius: 0.75rem;
+  border: 1px dashed #cccccc;
+  background: repeating-linear-gradient(
+    45deg,
+    #f9f9f9,
+    #f9f9f9 10px,
+    #f0f0f0 10px,
+    #f0f0f0 20px
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.cs-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* ---------- Outcome / Results ---------- */
+
+.cs-results {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.cs-results li::before {
+  content: "•";
+  margin-right: 0.5rem;
+  color: #444;
+}
+
+/* ---------- Project Nav ---------- */
+
+.cs-project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e2e2;
+}
+
+.cs-project-nav-links {
+  font-size: 0.9rem;
+}
+
+.cs-project-nav-links a {
+  text-decoration: none;
+  margin-left: 0.4rem;
+  color: #222;
+}
+
+.cs-project-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (min-width: 768px) {
+  .cs-hero {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .cs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .cs-main,
+  .cs-header,
+  .cs-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cs-project-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
