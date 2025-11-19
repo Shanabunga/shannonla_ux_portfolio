@@ -113,7 +113,7 @@ footer {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   margin: 0;
   color: #222;
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .cs-main {
@@ -554,89 +554,7 @@ footer {
   }
 }
 
-/* ===== ABOUT PAGE HERO ===== */
 
-.about-hero {
-  background-color: #4456DD; /* your brand blue */
-  border-radius: 16px;
-  padding: 2.5rem 2rem;
-  margin-bottom: 2.5rem;
-  color: #ffffff;
-}
-
-.about-hero-inner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-
-.about-hero-image {
-  width: 140px;
-  height: 140px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.7);
-  background: #ffffff;
-}
-
-.about-hero-text h1 {
-  margin: 0 0 0.3rem;
-  font-size: 2rem;
-}
-
-.about-hero-role {
-  margin: 0 0 0.75rem;
-  font-size: 1rem;
-  font-weight: 500;
-  opacity: 0.9;
-}
-
-.about-hero-copy {
-  margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.7;
-  max-width: 460px;
-}
-
-/* White content area below hero */
-
-.about-content {
-  background-color: #ffffff;
-}
-
-.about-grid {
-  display: grid;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.about-grid h2 {
-  margin-top: 0;
-}
-
-.about-grid ul {
-  padding-left: 1.2rem;
-}
-
-.about-grid li {
-  margin-bottom: 0.25rem;
-}
-
-.about-tools {
-  margin-bottom: 1.5rem;
-}
-
-/* Stack columns on small screens */
-@media (min-width: 768px) {
-  .about-hero-inner {
-    flex-wrap: nowrap;
-  }
-
-  .about-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 /* ===== ABOUT PAGE HERO (full-width blue block) ===== */
 
