@@ -641,10 +641,16 @@ footer {
 /* ===== ABOUT PAGE HERO (full-width blue block) ===== */
 
 .about-hero {
-  background-color: #4456DD; /* your brand blue */
+  background-color: #4456DD;
   color: #ffffff;
   padding: 3rem 1.5rem;
   margin-bottom: 2.5rem;
+  border-radius: 0 !important; /* <- remove rounded edges */
+}
+
+.about-hero-inner,
+.about-content {
+  border-radius: 0 !important;
 }
 
 .about-hero-inner {
