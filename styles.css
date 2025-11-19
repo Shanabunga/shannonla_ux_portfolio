@@ -601,13 +601,15 @@ footer {
 }
 
 .about-hero-image {
-  width: 140px;
-  height: 140px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 3px solid rgba(255, 255, 255, 0.8);
-  background: #ffffff;
+  max-width: 220px;   /* you can tweak size here */
+  height: auto;
+  border-radius: 0;   /* no circle mask */
+  border: none;       /* no outline */
+  background: transparent;
+  box-shadow: none;
+  display: block;
 }
+
 
 /* WHITE CONTENT AREA BELOW HERO */
 
