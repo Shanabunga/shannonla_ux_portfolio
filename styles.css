@@ -663,3 +663,29 @@ footer {
   }
 }
 
+/* === Typography tweaks for Work page === */
+
+/* Make project titles a bit larger and clearly dominant */
+.project-card h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* Make project summaries bold to stand out under the title */
+.project-summary {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Make the intro summary on the Work page feel stronger */
+.home-subtext {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Keep the labels (Project Type, Role, etc.) NOT bold,
+   even though they're wrapped in <strong> for semantics */
+.project-tags strong {
+  font-weight: 400;
+}
+
