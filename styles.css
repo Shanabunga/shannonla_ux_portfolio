@@ -448,6 +448,17 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
+/* Thumbnail images inside project cards */
+.project-thumb {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  object-fit: cover;
+  display: block;
+}
+
+
 .project-card h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
