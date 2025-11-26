@@ -19,6 +19,7 @@ a {
   text-decoration: none;
 }
 
+/* Old hero (not used now, safe to keep) */
 header.hero {
   display: flex;
   flex-wrap: wrap;
@@ -57,19 +58,6 @@ header.hero {
   border-radius: 50%;
   border: 4px solid var(--primary);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* ✅ New style for your cartoon image without a border */
-.profile-pic {
-  width: 150px;
-  height: auto;
-  margin-top: 1rem;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  box-shadow: none;
 }
 
 .btn {
@@ -358,7 +346,7 @@ footer {
   text-decoration: underline;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Responsive base ---------- */
 
 @media (min-width: 768px) {
   .cs-hero {
@@ -439,7 +427,7 @@ footer {
   gap: 2rem;
 }
 
-/* Project cards styled to echo cs-two-column cards */
+/* Project cards – base */
 .project-card {
   background-color: #ffffff;
   border-radius: 12px;
@@ -448,28 +436,42 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
 
+/* Split layout – image left, text right */
+.split-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
 /* Thumbnail images inside project cards */
 .project-thumb {
   width: 100%;
-  border-radius: 12px;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  max-width: 280px;              /* 🔹 keeps image from overpowering text */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   object-fit: cover;
   display: block;
+  flex-shrink: 0;
 }
 
+/* Text column in project cards */
+.project-info {
+  flex: 1;
+}
 
 .project-card h2 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .project-summary {
   margin: 0.75rem 0 1.25rem;
   font-size: 0.98rem;
   line-height: 1.5;
-  color: #444;
+  color: #333;
+  font-weight: 600;   /* stronger summary */
 }
 
 .project-tags p {
@@ -478,8 +480,9 @@ footer {
   color: #555;
 }
 
+/* semantic strong, visually regular weight */
 .project-tags strong {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Make View Project buttons visually consistent with cs-primary-btn */
@@ -501,7 +504,7 @@ footer {
 }
 
 /* Small responsive tweak */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .home-header-inner {
     padding: 2rem 1.25rem 1.5rem;
   }
@@ -514,6 +517,19 @@ footer {
   .home-identity {
     flex-direction: row;
     align-items: flex-start;
+  }
+
+  .split-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-thumb {
+    max-width: 100%;
+  }
+
+  .project-info {
+    width: 100%;
   }
 }
 
@@ -565,8 +581,6 @@ footer {
   }
 }
 
-
-
 /* ===== ABOUT PAGE HERO (full-width blue block) ===== */
 
 .about-hero {
@@ -574,7 +588,7 @@ footer {
   color: #ffffff;
   padding: 3rem 1.5rem;
   margin-bottom: 2.5rem;
-  border-radius: 0 !important; /* <- remove rounded edges */
+  border-radius: 0 !important;
 }
 
 .about-hero-inner,
@@ -612,15 +626,14 @@ footer {
 }
 
 .about-hero-image {
-  max-width: 220px;   /* you can tweak size here */
+  max-width: 220px;
   height: auto;
-  border-radius: 0;   /* no circle mask */
-  border: none;       /* no outline */
+  border-radius: 0;
+  border: none;
   background: transparent;
   box-shadow: none;
   display: block;
 }
-
 
 /* WHITE CONTENT AREA BELOW HERO */
 
@@ -650,7 +663,7 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-/* Responsive behavior */
+/* Responsive behavior for About */
 
 @media (max-width: 767px) {
   .about-hero-inner {
@@ -674,29 +687,8 @@ footer {
   }
 }
 
-/* === Typography tweaks for Work page === */
-
-/* Make project titles a bit larger and clearly dominant */
-.project-card h2 {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-/* Make project summaries bold to stand out under the title */
-.project-summary {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Make the intro summary on the Work page feel stronger */
+/* === Extra typography tweak for intro === */
 .home-subtext {
   font-weight: 600;
   color: #333;
 }
-
-/* Keep the labels (Project Type, Role, etc.) NOT bold,
-   even though they're wrapped in <strong> for semantics */
-.project-tags strong {
-  font-weight: 400;
-}
-
