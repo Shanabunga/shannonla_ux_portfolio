@@ -695,5 +695,5 @@ footer {
 
 /* Make only the House of Rock thumbnail slightly smaller */
 .project-thumb--house-of-rock {
-  max-width: 200px;   /* adjust this number until it feels right */
+  max-width: 140px;   /* adjust this number until it feels right */
 }
