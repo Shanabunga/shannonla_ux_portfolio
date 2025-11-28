@@ -454,11 +454,6 @@ footer {
   flex-shrink: 0;
 }
 
-/* Make only the House of Rock thumbnail slightly smaller */
-.project-thumb--house-of-rock {
-  max-width: 80px;   /* adjust this number until it feels right */
-}
-
 /* Text column in project cards */
 .project-info {
   flex: 1;
@@ -696,4 +691,9 @@ footer {
 .home-subtext {
   font-weight: 600;
   color: #333;
+}
+
+/* Make only the House of Rock thumbnail slightly smaller */
+.project-thumb--house-of-rock {
+  max-width: 80px;   /* adjust this number until it feels right */
 }
