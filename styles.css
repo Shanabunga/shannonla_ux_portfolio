@@ -424,7 +424,7 @@ footer {
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.25rem;
 }
 
 /* Project cards – base */
