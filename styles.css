@@ -443,6 +443,11 @@ footer {
   align-items: center;
 }
 
+/* Reverse image/text for House of Rock card only */
+.split-layout--reverse {
+  flex-direction: row-reverse;
+}
+
 /* Thumbnail images inside project cards */
 .project-thumb {
   width: 100%;
