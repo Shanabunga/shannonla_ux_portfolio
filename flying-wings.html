@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="case-study-body">
-    <!-- NAV BAR -->
-<nav class="site-nav">
-  <div class="site-nav-inner">
-    <a href="index.html" class="site-nav-brand">Shannon Wilson</a>
-    <div class="site-nav-links">
-      <a href="index.html#work">Work</a>
-      <a href="about.html">About</a>
-    </div>
-  </div>
-</nav>
 
+<body class="case-study-body">
+  <!-- NAV BAR -->
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-brand">Shannon Wilson</a>
+      <div class="site-nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </nav>
 
   <header class="cs-header">
     <a href="index.html" class="cs-back-link">← Back to home</a>
@@ -28,25 +28,27 @@
     <section class="cs-hero">
       <div class="cs-hero-text">
         <p class="cs-label">UX Case Study</p>
-        <h1>Flying Wings</h1>
+        <h1>Flying Wings – White-Label Travel Design System</h1>
         <p class="cs-subtitle">
-          Designing a white-label desktop flight booking experience with a complete end-to-end flow
-          that can be branded and reused for multiple airline and travel partners.
+          Designing a complete end-to-end flight booking experience and the underlying design system
+          so it could be rebranded and reused for multiple airline and travel partners.
         </p>
-
       </div>
 
       <aside class="cs-meta">
         <h2>Project Details</h2>
         <dl>
           <dt>Project Type</dt>
-          <dd>End-to-End Website & White-Label Prototype</dd>
+          <dd>End-to-End Website & White-Label Design System</dd>
 
           <dt>Role</dt>
-          <dd>Sole UX/UI Researcher & Designer</dd>
+          <dd>
+            Sole UX/UI Designer<br/>
+            Design System Creator
+          </dd>
 
           <dt>Industry</dt>
-          <dd>Travel & Tourism / SaaS</dd>
+          <dd>Travel & Tourism · SaaS</dd>
 
           <dt>Tools</dt>
           <dd>Figma, Balsamiq, Zoom</dd>
@@ -58,49 +60,198 @@
     <section class="cs-section">
       <h2>Overview</h2>
       <p>
-        Flying Wings is a white-label travel booking experience created for a client based in China.
-        The project was initiated through a Canadian partner who works primarily in the airline
-        industry. They provided a high-level sitemap and needed a desktop flight booking experience
-        that could be branded for their client and reused for future airline partners.
+        Flying Wings is a white-label flight booking experience created for a client based in China,
+        through a Canadian partner in the airline industry. They provided a high-level sitemap and
+        needed a desktop booking flow that could be branded for their client and reused for future
+        airline partners.
       </p>
       <p>
-        Starting from that basic sitemap, I designed both non-branded and branded high-fidelity
-        prototypes in Figma, covering the full booking journey from search to checkout. The goal
-        was to deliver a realistic, clickable experience that could be used in client presentations
-        and as a foundation for development.
+        Unlike some of my inherited projects, Flying Wings was a rare opportunity to build the
+        system from the ground up. I designed the end-to-end booking journey
+        <em>and</em> created a reusable design system – a UI and interaction foundation that makes it
+        fast to re-skin, extend, and scale the product for new clients.
       </p>
-  </section>
-
+    </section>
 
     <!-- CHALLENGE + GOALS -->
     <section class="cs-section cs-two-column">
-     <div>
-      <h2>The Challenge</h2>
-      <p>The team needed a booking flow that worked for two different purposes:</p>
-      <ul>
-        <li>A realistic flight booking experience for travelers.</li>
-        <li>A clean, structured demo that sales could present to potential clients.</li>
-      </ul>
-      <p>Starting from only a basic sitemap, the design also had to:</p>
-      <ul>
-        <li>Look modern and trustworthy for an international audience.</li>
-        <li>Be easy to rebrand for different airline and travel partners.</li>
-        <li>Show a complete journey from homepage to confirmation.</li>
-        <li>Be fully clickable so stakeholders could “feel” the experience.</li>
-      </ul>
-      <p>
-        <strong>Biggest challenge:</strong> transforming that high-level sitemap into a complete,
-        functional booking flow that could also be white-labeled and reused for future partners.
-      </p>
-    </div>
+      <div>
+        <h2>The Challenge</h2>
+        <p>The team needed a booking flow that served two audiences at once:</p>
+        <ul>
+          <li>Travelers who expect a familiar, trustworthy booking experience.</li>
+          <li>Sales teams who need a polished, clickable demo for potential clients.</li>
+        </ul>
+        <p>
+          We started with only a basic sitemap. From there, the challenge was to turn that into:
+        </p>
+        <ul>
+          <li>A complete search → results → checkout → confirmation journey.</li>
+          <li>A visual system that could be rebranded for future partners without starting over.</li>
+          <li>One source of truth for components, forms, and layout patterns.</li>
+        </ul>
+        <p>
+          The biggest opportunity – and the piece I’m most proud of – was establishing a
+          <strong>design system</strong> that made the experience both consistent and highly reusable.
+        </p>
+      </div>
 
+      <div>
+        <h2>Project Goals</h2>
+        <ul>
+          <li>Create an end-to-end booking flow from homepage to confirmation.</li>
+          <li>Design a non-branded base and a fully branded version for Flying Wings.</li>
+          <li>Build a reusable design system (colors, type, components, patterns).</li>
+          <li>Use booking patterns that feel familiar to modern travel users.</li>
+          <li>Deliver a clickable Figma prototype for demos and development handoff.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- DESIGN SYSTEM SECTION (MAJOR HIGHLIGHT) -->
+    <section class="cs-section">
+      <h2>Design System for White-Label Scalability</h2>
+      <p>
+        Because this experience needed to be white-labeled and reused for multiple clients, I didn’t
+        just design screens – I built a small but powerful design system to support them.
+      </p>
+
+      <article class="cs-subsection">
+        <h3>Foundations: Color, Type, and Layout</h3>
+        <p>
+          I started by defining UI foundations that could support both a neutral base and branded
+          themes:
+        </p>
+        <ul>
+          <li>
+            <strong>Color palette:</strong> a primary accent, secondary accents, neutrals, and
+            semantic colors (success, warning, error) that can be remapped for new brands.
+          </li>
+          <li>
+            <strong>Typography scale:</strong> consistent styles for headings, body text, labels,
+            buttons, and form instructions so content stays legible and cohesive.
+          </li>
+          <li>
+            <strong>Spacing & grids:</strong> regular spacing increments and multi-column layouts
+            to keep pages aligned and predictable.
+          </li>
+        </ul>
+
+        <figure class="cs-figure">
+          <div class="placeholder-box">
+            <span>Design system foundations – color palette, typography, and spacing</span>
+          </div>
+          <figcaption>
+            Core styles defined once and reused across homepage, search, results, and checkout.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="cs-subsection">
+        <h3>Components: Building Blocks for the Experience</h3>
+        <p>
+          On top of the foundations, I created reusable components for the key elements of the flow:
+        </p>
+        <ul>
+          <li>
+            <strong>Navigation:</strong> header with logo, main nav, and call-to-action placement.
+          </li>
+          <li>
+            <strong>Search module:</strong> trip type toggles (return/one-way), cabin class,
+            passengers, origin/destination, and date inputs.
+          </li>
+          <li>
+            <strong>Destination cards:</strong> promotional cards for “Destination specials” with
+            price, location, and “per person” messaging.
+          </li>
+          <li>
+            <strong>Flight result rows:</strong> reusable layouts for outbound/inbound flights with
+            times, airports, prices, duration, and stop information.
+          </li>
+          <li>
+            <strong>Form fields:</strong> standardized inputs for passenger details, contact info,
+            and billing, including labels, hints, and error states.
+          </li>
+          <li>
+            <strong>Buttons & states:</strong> primary/secondary buttons and discrete states
+            like “Select”, “Book it”, and “Booked”.
+          </li>
+        </ul>
+
+        <div class="cs-grid">
+          <figure class="cs-figure">
+            <div class="placeholder-box">
+              <span>Reusable search module and navigation components</span>
+            </div>
+            <figcaption>
+              Components that keep the homepage, results, and checkout visually aligned.
+            </figcaption>
+          </figure>
+
+          <figure class="cs-figure">
+            <div class="placeholder-box">
+              <span>Flight result cards and destination specials</span>
+            </div>
+            <figcaption>
+              Card and row patterns that repeat across multiple flows and future clients.
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="cs-subsection">
+        <h3>Non-Branded Base and Branded Theme</h3>
+        <p>
+          To support future clients, I created two visual states using the same system:
+        </p>
+        <ul>
+          <li>
+            A <strong>non-branded base</strong> with neutral colors and generic “Company Name”
+            styling, used as the starting point for new partners.
+          </li>
+          <li>
+            A <strong>Flying Wings branded theme</strong> with updated colors, imagery, and copy,
+            applied on top of the same core components.
+          </li>
+        </ul>
+        <p>
+          Because everything was built from shared components, updating the brand didn’t mean
+          redesigning screens – it meant swapping tokens and styles.
+        </p>
+
+        <figure class="cs-figure">
+          <div class="placeholder-box">
+            <span>Base vs branded homepage using the same component system</span>
+          </div>
+          <figcaption>
+            The design system made it easy to move from neutral demo state to a fully branded client experience.
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="cs-subsection">
+        <h3>Why This Matters</h3>
+        <p>
+          Practically, the design system allowed us to:
+        </p>
+        <ul>
+          <li>Update visual themes without rebuilding layouts.</li>
+          <li>Keep the booking flow consistent as new features are added.</li>
+          <li>Hand off a clear, structured UI kit to development.</li>
+          <li>Use the same demo for multiple client conversations with minimal tweaks.</li>
+        </ul>
+        <p>
+          This project wasn’t just “a set of screens” – it was a reusable, scalable product
+          foundation.
+        </p>
+      </article>
     </section>
 
     <!-- PROCESS -->
     <section class="cs-section">
       <h2>Process</h2>
 
-      <!-- 1. Sitemap & Structure -->
+      <!-- 1. Client Sitemap & Structure -->
       <article class="cs-subsection">
         <h3>1. Client Sitemap & Structure</h3>
         <p>
@@ -118,10 +269,10 @@
 
         <figure class="cs-figure">
           <div class="placeholder-box">
-            <span>Client-provided sitemap and initial structure notes</span>
+            <span>Client sitemap and expanded structure</span>
           </div>
           <figcaption>
-            Early structure outlining the navigation and core sections to support booking and marketing.
+            Turning a basic sitemap into a full end-to-end booking flow supported by a design system.
           </figcaption>
         </figure>
       </article>
@@ -130,13 +281,13 @@
       <article class="cs-subsection">
         <h3>2. Low-Fidelity Wireframes</h3>
         <p>
-          Using Balsamiq, I created low-fidelity wireframes to define layout and hierarchy before
-          moving into visual design. The wireframes focused on:
+          I used Balsamiq to sketch out low-fidelity wireframes before committing to visual design.
+          The focus was on:
         </p>
         <ul>
-          <li>A clear homepage with a search module and featured destinations.</li>
-          <li>Simple, scannable flight results with pricing and trip time details.</li>
-          <li>A checkout page that balances detail with clarity and trust.</li>
+          <li>A clear homepage with search front-and-center.</li>
+          <li>Scannable flight results with trip time and price.</li>
+          <li>Checkout that feels detailed but not overwhelming.</li>
         </ul>
 
         <div class="cs-grid">
@@ -145,7 +296,7 @@
               <span>Homepage wireframe with search & destination specials</span>
             </div>
             <figcaption>
-              Initial layout for the homepage, combining a hero message with a search module and travel deals.
+              Early structure for hero messaging, search, and promotional destinations.
             </figcaption>
           </figure>
 
@@ -154,7 +305,7 @@
               <span>Results & trip summary wireframes</span>
             </div>
             <figcaption>
-              Wireframes showing how flight options and trip summaries would be displayed.
+              Exploring how search results and trip summaries would appear side-by-side.
             </figcaption>
           </figure>
         </div>
@@ -164,14 +315,14 @@
       <article class="cs-subsection">
         <h3>3. Non-Branded High-Fidelity Prototype</h3>
         <p>
-          Once the flow and layout were validated, I moved into a non-branded high-fidelity
-          prototype. This version established:
+          With the layout validated, I moved into a non-branded high-fidelity prototype using the
+          design system foundations. This version established:
         </p>
         <ul>
-          <li>Typography scale and visual hierarchy.</li>
-          <li>Form styles for the search and checkout steps.</li>
-          <li>Card-based layout for destination specials.</li>
-          <li>Consistent headers, footers, and navigation patterns.</li>
+          <li>Typography and color usage across the interface.</li>
+          <li>Form styles and field groupings for search and checkout.</li>
+          <li>Card layouts for destination specials and supporting content.</li>
+          <li>Consistent header, footer, and navigation patterns.</li>
         </ul>
 
         <figure class="cs-figure">
@@ -179,22 +330,21 @@
             <span>Non-branded homepage with flight search module</span>
           </div>
           <figcaption>
-            High-fidelity non-branded homepage used as a base for future client themes.
+            High-fidelity base experience, ready to be themed for different clients.
           </figcaption>
         </figure>
       </article>
 
-      <!-- 4. Branded Prototype -->
+      <!-- 4. Branded High-Fidelity Prototype -->
       <article class="cs-subsection">
         <h3>4. Branded High-Fidelity Prototype</h3>
         <p>
-          With the base experience in place, I created a branded version tailored to the client’s
-          airline partner. This included:
+          Using the same components, I then applied the Flying Wings brand:
         </p>
         <ul>
-          <li>Custom colors and brand typography.</li>
-          <li>Travel imagery reflecting key destinations.</li>
-          <li>Updated hero copy and call-to-action messaging.</li>
+          <li>Custom color palette and typography choices.</li>
+          <li>Updated hero imagery and destination visuals.</li>
+          <li>Refined marketing copy for the homepage and specials.</li>
         </ul>
 
         <div class="cs-grid">
@@ -203,7 +353,7 @@
               <span>Branded homepage with featured destinations</span>
             </div>
             <figcaption>
-              Branded experience showing example pricing and destination specials.
+              Applying brand styling on top of the same reusable component library.
             </figcaption>
           </figure>
 
@@ -212,7 +362,7 @@
               <span>Branded footer and supporting pages</span>
             </div>
             <figcaption>
-              Supporting content like services, about, and email marketing to frame the experience.
+              Consistent treatment of supporting content like services, about, and marketing sections.
             </figcaption>
           </figure>
         </div>
@@ -222,14 +372,13 @@
       <article class="cs-subsection">
         <h3>5. Search, Results & Selection Flow</h3>
         <p>
-          The core booking flow centered on making it easy to search, compare, and select flights.
-          The results layout included:
+          The core booking flow needed to be easy to scan and compare. The results layout included:
         </p>
         <ul>
-          <li>Outbound and inbound flight lists with pricing.</li>
-          <li>Trip duration, layovers, and “Direct” labels.</li>
-          <li>Clear “Select”, “Book it”, and “Booked” states.</li>
-          <li>Consistent layout for both outbound and inbound segments.</li>
+          <li>Separate outbound and inbound flight lists with pricing.</li>
+          <li>Trip duration, layovers, and “Direct” indicators.</li>
+          <li>Clear states: “Select”, “Book it”, and “Booked”.</li>
+          <li>Consistent rows for all options to support quick comparison.</li>
         </ul>
 
         <figure class="cs-figure">
@@ -237,7 +386,7 @@
             <span>Flight results screen with outbound and inbound options</span>
           </div>
           <figcaption>
-            Flight selection screens showing price, total trip time, and stop information.
+            Result rows based on shared components so logic and layout stay aligned.
           </figcaption>
         </figure>
       </article>
@@ -246,16 +395,14 @@
       <article class="cs-subsection">
         <h3>6. Trip Summary & Checkout</h3>
         <p>
-          After selecting flights, users see a combined trip summary and price breakdown, followed by
-          passenger and billing forms. The checkout flow was designed to be familiar and
-          trustworthy, with:
+          After flight selection, users see a combined trip summary and price breakdown, followed by
+          passenger and billing forms. The design system ensured:
         </p>
         <ul>
-          <li>Clear outbound and inbound flight details.</li>
-          <li>Base price and taxes/fees separated.</li>
-          <li>Fields for passenger information and contact details.</li>
-          <li>Billing address and payment-related details.</li>
-          <li>Visible terms and conditions to build trust.</li>
+          <li>Consistent typography and spacing across all form sections.</li>
+          <li>Clear hierarchy between outbound, inbound, and price details.</li>
+          <li>Standardized input styles for all passenger and billing fields.</li>
+          <li>Visible terms and conditions to build trust near the final action.</li>
         </ul>
 
         <figure class="cs-figure">
@@ -263,7 +410,7 @@
             <span>Trip summary and passenger details screen</span>
           </div>
           <figcaption>
-            Checkout screen summarizing the trip and collecting all required traveler information.
+            Checkout screen built entirely from reusable components in the design system.
           </figcaption>
         </figure>
       </article>
@@ -276,12 +423,12 @@
           Figma. Stakeholders could click through:
         </p>
         <ul>
-          <li>Homepage → Search → Results.</li>
-          <li>Flight selection and trip summary.</li>
-          <li>Checkout and confirmation.</li>
+          <li>Homepage → Search → Results</li>
+          <li>Flight selection and trip summary</li>
+          <li>Checkout and confirmation</li>
         </ul>
         <p>
-          The prototype is currently used in beta for internal and client-facing presentations.
+          The prototype is used in beta for internal and client-facing presentations.
         </p>
 
         <figure class="cs-figure">
@@ -289,13 +436,14 @@
             <span>Figma prototype overview of the booking flow</span>
           </div>
           <figcaption>
-            Clickable prototype connecting all key steps of the flight booking experience.
+            Interactive prototype connecting all steps of the white-label booking journey.
           </figcaption>
         </figure>
 
         <p>
           <strong>View clickable prototype:</strong><br />
-          <a href="https://www.figma.com/proto/XHjMlDq7fsQRESGJkgU5tE/Flyingwings?node-id=201%3A0&scaling=min-zoom&page-id=27%3A35" target="_blank" rel="noopener">
+          <a href="https://www.figma.com/proto/XHjMlDq7fsQRESGJkgU5tE/Flyingwings?node-id=201%3A0&scaling=min-zoom&page-id=27%3A35"
+             target="_blank" rel="noopener">
             Open the Flying Wings Figma prototype
           </a>
         </p>
@@ -306,14 +454,15 @@
     <section class="cs-section">
       <h2>Outcome</h2>
       <p>
-        The final deliverable included both a non-branded white-label base and a branded high-fidelity
-        prototype, along with a complete interactive flow from search to checkout.
+        The final deliverable included both a non-branded white-label base and a Flying Wings
+        branded experience, all powered by the same design system. The client approved the design,
+        and it was handed off to the development team as a structured, reusable UI kit.
       </p>
 
       <ul class="cs-results">
-        <li>Delivered a full end-to-end booking journey in a clickable prototype.</li>
-        <li>Created a reusable white-label base that can be themed for future clients.</li>
-        <li>Provided a polished demo flow for sales presentations and onboarding.</li>
+        <li>Delivered a complete end-to-end booking journey in a clickable prototype.</li>
+        <li>Created a scalable design system to support future white-label clients.</li>
+        <li>Provided a polished demo flow for sales and stakeholder presentations.</li>
         <li>Established clear patterns for search, results, selection, and checkout.</li>
       </ul>
     </section>
@@ -322,16 +471,16 @@
     <section class="cs-section">
       <h2>What I’d Do Next</h2>
       <ul>
-        <li>Run usability testing with travelers to validate clarity and flow.</li>
-        <li>Layer in analytics to understand drop-off points along the journey.</li>
-        <li>Optimize layouts for mobile and tablet experiences.</li>
+        <li>Add mobile and tablet variants using the same design system foundations.</li>
+        <li>Layer in analytics to understand drop-off points in the booking flow.</li>
         <li>Explore features such as fare alerts, saved trips, and loyalty integration.</li>
+        <li>Formalize the system into a full design system site or documentation hub.</li>
       </ul>
     </section>
 
     <!-- PROJECT NAVIGATION -->
     <nav class="cs-project-nav">
-      <a href="index.html" class="cs-secondary-btn">← Back to home</a>
+      <a href="quest-gasket.html" class="cs-secondary-btn">← Previous: Quest Gasket</a>
       <div class="cs-project-nav-links">
         <span>Next project:</span>
         <a href="house-of-rock.html">House of Rock →</a>
@@ -344,4 +493,3 @@
   </footer>
 </body>
 </html>
-
