@@ -584,3 +584,66 @@ footer {
   .cs-main {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+
+
+
+/* === Design System Components – compact, equal height, no grey borders === */
+
+.cs-components-card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin-top: 2rem;
+}
+
+.cs-components-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cs-components-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+/* make each figure behave like a little card */
+.cs-components-grid .cs-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* 🔑 THIS overrides the global .cs-figure img rule */
+.cs-components-grid .cs-figure img {
+  width: auto;          /* don't stretch to 100% */
+  max-width: 140px;     /* overall size – make them smaller */
+  height: 120px;        /* forces all three to the same visual height */
+  object-fit: contain;  /* no distortion, just fit inside the box */
+
+  border: none;         /* remove grey outline */
+  border-radius: 0;     /* don't clip your rounded PNG edges */
+  box-shadow: none;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.cs-components-grid .cs-figure figcaption {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Mobile: stack one per row */
+@media (max-width: 768px) {
+  .cs-components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-components-card {
+    padding: 1.25rem;
+  }
+}
