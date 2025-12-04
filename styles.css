@@ -333,12 +333,14 @@ footer {
 }
 
 .cs-component-img {
-  max-width: 150px;   /* 🔹 shrink image so it stays crisp and not blurry */
+  max-width: 150px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 0.75rem;
+  border-radius: 0 !important; /* ensures your rounded PNG isn't clipped */
 }
+
 
 .cs-component figcaption {
   font-size: 0.85rem;
