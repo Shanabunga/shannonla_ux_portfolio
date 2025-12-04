@@ -274,6 +274,19 @@ footer {
   border: 1px solid #e2e2e2;
 }
 
+/* Override global image styling for design system components */
+.cs-component-img {
+  max-width: 150px;         /* or whatever size you're using */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+
+  border-radius: 0;         /* 🔥 remove rounded clipping */
+  border: none;             /* 🔥 remove grey outline */
+  box-shadow: none;         /* just in case */
+}
+
 .cs-figure figcaption {
   font-size: 0.85rem;
   color: #666;
