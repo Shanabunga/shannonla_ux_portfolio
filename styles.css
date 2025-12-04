@@ -647,3 +647,20 @@ footer {
     padding: 1.25rem;
   }
 }
+
+  /* === Flying Wings: Core UI Components row === */
+/* Make all three images use controlled sizing */
+img[alt="Design system buttons"],
+img[alt="Design system text fields"],
+img[alt="Design system icon set"] {
+  width: auto;          /* don't stretch to full width */
+  height: 120px;        /* same box height for all */
+  object-fit: contain;  /* keep proportions */
+  display: inline-block;
+  margin: 0 8px;
+}
+
+/* Small visual tweak: button art is a bit taller, so make it slightly shorter */
+img[alt="Design system buttons"] {
+  height: 105px;        /* ↓ slightly smaller so it *looks* same height */
+}
