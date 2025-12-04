@@ -270,8 +270,8 @@ footer {
 
 .cs-figure img {
   width: 100%;
-  border-radius: 0.75rem;
-  border: 1px solid #e2e2e2;
+  border-radius: 0;
+  border: none;
 }
 
 /* Override global image styling for design system components */
