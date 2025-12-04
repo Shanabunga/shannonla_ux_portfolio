@@ -333,7 +333,7 @@ footer {
 }
 
 .cs-component-img {
-  max-width: 220px;   /* 🔹 shrink image so it stays crisp and not blurry */
+  max-width: 150px;   /* 🔹 shrink image so it stays crisp and not blurry */
   width: 100%;
   height: auto;
   display: block;
