@@ -620,8 +620,8 @@ footer {
 /* 🔑 THIS overrides the global .cs-figure img rule */
 .cs-components-grid .cs-figure img {
   width: auto;          /* don't stretch to 100% */
-  max-width: 140px;     /* overall size – make them smaller */
-  height: 120px;        /* forces all three to the same visual height */
+  max-width: 120px;     /* overall size – make them smaller */
+  height: 110px;        /* forces all three to the same visual height */
   object-fit: contain;  /* no distortion, just fit inside the box */
 
   border: none;         /* remove grey outline */
