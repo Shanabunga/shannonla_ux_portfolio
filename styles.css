@@ -306,6 +306,57 @@ footer {
   gap: 1.5rem;
 }
 
+/* ---------- Design System Components Card (buttons / fields / icons) ---------- */
+
+.cs-components-card {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin-top: 2rem;
+}
+
+.cs-components-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cs-components-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.cs-component {
+  text-align: center;
+}
+
+.cs-component-img {
+  max-width: 220px;   /* 🔹 shrink image so it stays crisp and not blurry */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.cs-component figcaption {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Mobile: stack components instead of side-by-side */
+@media (max-width: 768px) {
+  .cs-components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-components-card {
+    padding: 1.25rem;
+  }
+}
+
 /* ---------- Outcome / Results ---------- */
 
 .cs-results {
@@ -451,7 +502,7 @@ footer {
 /* Thumbnail images inside project cards */
 .project-thumb {
   width: 100%;
-  max-width: 280px;              /* 🔹 keeps image from overpowering text */
+  max-width: 280px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   object-fit: cover;
@@ -476,7 +527,7 @@ footer {
   font-size: 0.98rem;
   line-height: 1.5;
   color: #333;
-  font-weight: 600;   /* stronger summary */
+  font-weight: 600;
 }
 
 .project-tags p {
@@ -517,188 +568,3 @@ footer {
   .cs-main {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .home-identity {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .split-layout {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-thumb {
-    max-width: 100%;
-  }
-
-  .project-info {
-    width: 100%;
-  }
-}
-
-/* ===== Global Top Navigation ===== */
-
-.site-nav {
-  border-bottom: 1px solid #e2e2e2;
-  background-color: #ffffff;
-}
-
-.site-nav-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0.75rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-}
-
-.site-nav-brand {
-  font-size: 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #222;
-}
-
-.site-nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.site-nav-links a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #555;
-}
-
-.site-nav-links a:hover {
-  text-decoration: underline;
-}
-
-/* Smaller padding on mobile */
-@media (max-width: 600px) {
-  .site-nav-inner {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-}
-
-/* ===== ABOUT PAGE HERO (full-width blue block) ===== */
-
-.about-hero {
-  background-color: #4456DD;
-  color: #ffffff;
-  padding: 3rem 1.5rem;
-  margin-bottom: 2.5rem;
-  border-radius: 0 !important;
-}
-
-.about-hero-inner,
-.about-content {
-  border-radius: 0 !important;
-}
-
-.about-hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.about-hero-text h1 {
-  margin: 0 0 0.3rem;
-  font-size: 2rem;
-}
-
-.about-hero-role {
-  margin: 0 0 0.75rem;
-  font-size: 1rem;
-  font-weight: 500;
-  opacity: 0.96;
-}
-
-.about-hero-copy {
-  margin: 0;
-  font-size: 0.98rem;
-  line-height: 1.7;
-  max-width: 460px;
-}
-
-.about-hero-image {
-  max-width: 220px;
-  height: auto;
-  border-radius: 0;
-  border: none;
-  background: transparent;
-  box-shadow: none;
-  display: block;
-}
-
-/* WHITE CONTENT AREA BELOW HERO */
-
-.about-content {
-  background-color: #ffffff;
-}
-
-.about-grid {
-  display: grid;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.about-grid h2 {
-  margin-top: 0;
-}
-
-.about-grid ul {
-  padding-left: 1.2rem;
-}
-
-.about-grid li {
-  margin-bottom: 0.25rem;
-}
-
-.about-tools {
-  margin-bottom: 1.5rem;
-}
-
-/* Responsive behavior for About */
-
-@media (max-width: 767px) {
-  .about-hero-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .about-hero-image {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (min-width: 768px) {
-  .about-hero-inner {
-    flex-wrap: nowrap;
-  }
-
-  .about-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* === Extra typography tweak for intro === */
-.home-subtext {
-  font-weight: 600;
-  color: #333;
-}
-
-/* Make only the House of Rock thumbnail slightly smaller */
-.project-thumb--house-of-rock {
-  max-width: 140px;   /* adjust this number until it feels right */
-}
