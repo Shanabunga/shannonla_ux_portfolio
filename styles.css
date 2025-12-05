@@ -274,20 +274,6 @@ footer {
   border: none;
 }
 
-/* Override global image styling for design system components */
-.cs-component-img {
-  width: 100%;
-  max-width: 150px;     /* or whatever size you prefer */
-  height: 120px;        /* 🔥 forces consistent height */
-  object-fit: contain;  /* 🔥 keeps proportions perfect */
-  border: none !important;
-  border-radius: 0 !important;
-  background: transparent;
-  display: block;
-  margin: 0 auto 0.75rem;
-}
-
-
 .cs-figure figcaption {
   font-size: 0.85rem;
   color: #666;
@@ -720,6 +706,160 @@ footer {
 
 .cs-figure--narrow figcaption {
   text-align: center;
+}
+
+/* ===== Global Top Navigation ===== */
+
+.site-nav {
+  border-bottom: 1px solid #e2e2e2;
+  background-color: #ffffff;
+}
+
+.site-nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.site-nav-brand {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #222;
+}
+
+.site-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-nav-links a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #555;
+}
+
+.site-nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Smaller padding on mobile */
+@media (max-width: 600px) {
+  .site-nav-inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* ===== ABOUT PAGE HERO (full-width blue block) ===== */
+
+.about-hero {
+  background-color: #4456DD;
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0 !important;
+}
+
+.about-hero-inner,
+.about-content {
+  border-radius: 0 !important;
+}
+
+.about-hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-hero-text h1 {
+  margin: 0 0 0.3rem;
+  font-size: 2rem;
+}
+
+.about-hero-role {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.96;
+}
+
+.about-hero-copy {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  max-width: 460px;
+}
+
+.about-hero-image {
+  max-width: 220px;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  display: block;
+}
+
+/* WHITE CONTENT AREA BELOW HERO */
+
+.about-content {
+  background-color: #ffffff;
+}
+
+.about-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-grid h2 {
+  margin-top: 0;
+}
+
+.about-grid ul {
+  padding-left: 1.2rem;
+}
+
+.about-grid li {
+  margin-bottom: 0.25rem;
+}
+
+.about-tools {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive behavior for About */
+
+@media (max-width: 767px) {
+  .about-hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-hero-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-hero-inner {
+    flex-wrap: nowrap;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 
