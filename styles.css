@@ -705,3 +705,13 @@ footer {
     padding: 1.25rem;
   }
 }
+
+/* === Prototype Screenshots (Non-branded + Branded) === */
+.cs-figure img {
+  max-width: 800px;      /* adjust to taste: 700–850px works beautifully */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
