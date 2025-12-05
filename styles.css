@@ -706,12 +706,11 @@ footer {
   }
 }
 
-/* === Prototype Screenshots (Non-branded + Branded) === */
-.cs-figure img {
-  max-width: 800px;      /* adjust to taste: 700–850px works beautifully */
+/* Make non-branded prototype image smaller and centered */
+.cs-figure--narrow img {
+  max-width: 700px;   /* adjust: 600–800px depending on what you prefer */
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: block;
 }
 
