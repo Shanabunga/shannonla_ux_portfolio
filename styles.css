@@ -708,6 +708,46 @@ footer {
   text-align: center;
 }
 
+/* === Search / Results / Selection screenshots === */
+
+.cs-results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.cs-results-grid .cs-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cs-results-grid .cs-figure img {
+  width: 100%;
+  max-width: 260px;   /* tweak 220–280px depending on how big you want them */
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e2e2e2;
+  display: block;
+  margin: 0 auto 0.75rem;
+}
+
+.cs-results-grid .cs-figure figcaption {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Mobile: stack one per row */
+@media (max-width: 900px) {
+  .cs-results-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* ===== Global Top Navigation ===== */
 
 .site-nav {
