@@ -706,11 +706,20 @@ footer {
   }
 }
 
-/* Make non-branded prototype image smaller and centered */
+/* Narrow single-mockup figures (non-branded + branded) */
+.cs-figure--narrow {
+  text-align: center;
+}
+
 .cs-figure--narrow img {
-  max-width: 700px;   /* adjust: 600–800px depending on what you prefer */
+  max-width: 640px;   /* 🔽 smaller than 700px; tweak 600–680 if you want */
   width: 100%;
   margin: 0 auto;
   display: block;
 }
+
+.cs-figure--narrow figcaption {
+  text-align: center;
+}
+
 
