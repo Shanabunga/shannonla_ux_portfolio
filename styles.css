@@ -997,3 +997,23 @@ footer {
   }
 }
 
+/* Targeted fix: the Design System Foundations image is portrait, so constrain + frame it */
+img[src*="fw-ds-theme-base"]{
+  max-width: 760px;
+  width: 100%;
+  margin: 1.5rem auto 0;
+  display: block;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+/* Targeted fix: make Core UI Components images look uniform */
+.cs-components-grid .cs-component-img{
+  height: 180px;        /* overrides the 170px */
+  object-fit: contain;
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
