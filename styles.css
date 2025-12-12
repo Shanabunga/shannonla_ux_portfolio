@@ -903,3 +903,12 @@ footer {
 }
 
 
+/* prototype Button Flying Wings */
+  .prototype-button {
+    display: block;
+    margin: 2rem auto;
+    max-width: 280px; /* optional */
+    text-align: center;
+  }
+
+
