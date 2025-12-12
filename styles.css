@@ -1017,3 +1017,41 @@ img[src*="fw-ds-theme-base"]{
   border-radius: 12px;
 }
 
+/* Make the Design System Foundations artifact feel like a centered card */
+img[src*="fw-ds-theme-base"]{
+  max-width: 720px;
+  width: 100%;
+  display: block;
+  margin: 2rem auto 0;
+  padding: 18px;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.cs-grid .cs-figure {
+  display: flex;
+  justify-content: center;
+}
+
+/* Normalize Core UI Components thumbnails so they align visually */
+.cs-components-grid .cs-component-img{
+  width: 100%;
+  height: 190px;        /* consistent thumbnail window */
+  object-fit: contain;  /* no cropping */
+  display: block;
+  margin: 0 auto;
+
+  background: #fff;     /* creates a consistent “tile” */
+  padding: 14px;
+  border-radius: 14px;
+}
+
+.cs-components-grid .cs-component{
+  margin: 0;
+}
+
+.cs-components-card{
+  padding: 2rem;
+  border-radius: 16px;
+}
+
