@@ -1112,4 +1112,44 @@ img[src*="fw-ds-theme-base"]{
 /* Quest Gasket – industrial / technical */
 .case-quest-gasket .cs-hero-band {
   background: var(--primary-variant); /* #D1DEFF */
+
+  /* ================================
+   Full-bleed HERO BAND (robust)
+   ================================ */
+
+/* Prevent any horizontal clipping/scroll side effects */
+.case-study-body { overflow-x: hidden; }
+
+/* Full-bleed section that won’t shift incorrectly */
+.cs-hero-band{
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+
+  padding: 3rem 0;
+  background: var(--secondary); /* default (Flying Wings) */
+}
+
+/* Inner container alignment */
+.cs-hero-band-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Grid layout */
+.cs-hero-band-grid{
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px){
+  .cs-hero-band-grid{ grid-template-columns: 1fr; }
+}
+
 }
