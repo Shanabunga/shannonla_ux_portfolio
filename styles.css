@@ -1087,3 +1087,29 @@ img[src*="fw-ds-theme-base"]{
   color: rgba(34,34,34,.75);
 }
 
+/* ================================
+   Case Study Hero Band Colors
+   ================================ */
+
+/* Base hero band (layout only, no color) */
+.cs-hero-band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3rem 0;
+}
+
+/* Flying Wings – keep existing color */
+.case-flying-wings .cs-hero-band {
+  background: var(--secondary); /* #56EAE3 */
+}
+
+/* House of Rock – darker, music-forward */
+.case-house-of-rock .cs-hero-band {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* Quest Gasket – industrial / technical */
+.case-quest-gasket .cs-hero-band {
+  background: var(--primary-variant); /* #D1DEFF */
+}
