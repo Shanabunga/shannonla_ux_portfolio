@@ -1055,3 +1055,35 @@ img[src*="fw-ds-theme-base"]{
   border-radius: 16px;
 }
 
+/* ================================
+   Full-bleed footer band (About + Case Studies)
+   ================================ */
+
+.cs-footer-band{
+  background: var(--primary-variant);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 2.25rem 0;
+  text-align: center;
+}
+
+.cs-footer-band-inner{
+  max-width: 960px;      /* aligns with your .cs-main width */
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.cs-footer-thanks{
+  margin: 0 0 .5rem;
+  font-size: 1.35rem;    /* bigger text */
+  font-weight: 800;      /* bold */
+  color: #222;
+  line-height: 1.25;
+}
+
+.cs-footer-note{
+  margin: 0;
+  font-size: .95rem;
+  color: rgba(34,34,34,.75);
+}
+
