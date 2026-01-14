@@ -6,54 +6,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body class="case-study-body">
-   <!-- NAV BAR -->
-<nav class="site-nav">
-  <div class="site-nav-inner">
-    <a href="index.html" class="site-nav-brand">Shannon Wilson</a>
-    <div class="site-nav-links">
-      <a href="index.html#work">Work</a>
-      <a href="about.html">About</a>
+  <!-- NAV BAR -->
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="index.html" class="site-nav-brand">Shannon Wilson</a>
+      <div class="site-nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <header class="cs-header">
     <a href="index.html" class="cs-back-link">← Back to home</a>
   </header>
 
   <main class="cs-main">
-    <!-- HERO SECTION -->
-    <section class="cs-hero">
-      <div class="cs-hero-text">
-        <p class="cs-label">UX Case Study</p>
-        <h1>House of Rock</h1>
-        <p class="cs-subtitle">
-          Redesigning a concert + travel booking platform with social features, custom UI components,
-          and improved booking flows for both mobile and desktop.
-        </p>
+
+    <!-- FULL-BLEED HERO BAND (matches Flying Wings) -->
+    <section class="cs-hero-band">
+      <div class="cs-hero-band-inner">
+        <div class="cs-hero-band-grid">
+
+          <!-- Left: Intro + Summary + Prototype CTA -->
+          <div class="cs-hero-text">
+            <p class="cs-label">UX Case Study</p>
+            <h1>House of Rock</h1>
+            <p class="cs-subtitle">
+              Redesigning a concert + travel booking platform with social features, custom UI components,
+              and improved booking flows for both mobile and desktop.
+            </p>
+
+            <div class="cs-summary" aria-label="Case study summary">
+              <h2 class="cs-summary-title">Summary</h2>
+              <ul class="cs-summary-list">
+                <li><strong>Outcome:</strong> Improved social + booking flows with clearer navigation and reusable UI patterns.</li>
+                <li><strong>Primary value:</strong> Increased clarity, consistency, and user control across mobile and desktop.</li>
+                <li><strong>Deliverable:</strong> High-fidelity clickable prototypes for client reviews and dev handoff.</li>
+              </ul>
+
+              <div class="cs-summary-actions">
+                <a
+                  class="cs-primary-btn"
+                  href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=2652%3A7639&amp;scaling=scale-down&amp;page-id=2652%3A7637"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View main prototype <span aria-hidden="true">→</span>
+                </a>
+                <p class="cs-summary-note">Opens in a new tab.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Prototype preview + Project Details -->
+          <aside class="cs-hero-media" aria-label="Prototype preview and project details">
+            <figure class="cs-hero-figure">
+              <!-- Replace this image with your own House of Rock preview if you have one -->
+              <img
+                src="assets/images/house-of-rock-hero.png"
+                alt="House of Rock prototype preview"
+                loading="lazy"
+              />
+            </figure>
+
+            <div class="cs-meta">
+              <h2>Project Details</h2>
+              <dl>
+                <dt>Project Type</dt>
+                <dd>Mobile &amp; Desktop UX – Travel, Concert &amp; Social Platform</dd>
+
+                <dt>Role</dt>
+                <dd>UX/UI Designer &amp; Researcher</dd>
+
+                <dt>Industry</dt>
+                <dd>Travel · Entertainment · Social Networking</dd>
+
+                <dt>Tools</dt>
+                <dd>Figma, Balsamiq, Miro, Heuristic Evaluation</dd>
+              </dl>
+
+              <a class="cs-primary-btn" href="https://www.houseofrock.com/" target="_blank" rel="noopener noreferrer">
+                View live website <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </aside>
+
+        </div>
       </div>
-
-      <aside class="cs-meta">
-        <h2>Project Details</h2>
-        <dl>
-          <dt>Project Type</dt>
-          <dd>Mobile & Desktop UX – Travel, Concert & Social Platform</dd>
-
-          <dt>Role</dt>
-          <dd>UX/UI Designer & Researcher</dd>
-
-          <dt>Industry</dt>
-          <dd>Travel · Entertainment · Social Networking</dd>
-
-          <dt>Tools</dt>
-          <dd>Figma, Balsamiq, Miro, Heuristic Evaluation</dd>
-        </dl>
-        <a class="cs-primary-btn" href="https://www.houseofrock.com/" target="_blank" rel="noopener">
-          View live website
-        </a>
-      </aside>
     </section>
+    <!-- END HERO BAND -->
 
     <!-- OVERVIEW -->
     <section class="cs-section">
@@ -111,7 +155,7 @@
 
       <!-- 1. Heuristic Evaluation -->
       <article class="cs-subsection">
-        <h3>1. Heuristic Evaluation & Experience Audit</h3>
+        <h3>1. Heuristic Evaluation &amp; Experience Audit</h3>
         <p>
           I began with a full audit of the existing designs, using heuristic evaluation to assess:
         </p>
@@ -177,7 +221,7 @@
 
       <!-- 3. Social Feed & Posting -->
       <article class="cs-subsection">
-        <h3>3. Social Feed & Posting Patterns</h3>
+        <h3>3. Social Feed &amp; Posting Patterns</h3>
         <p>
           The social feed showed posts from users sharing concerts, trips, and experiences. I
           refined these patterns to make:
@@ -290,7 +334,7 @@
 
       <!-- 6. Desktop Vacation Package & Trip Builder -->
       <article class="cs-subsection">
-        <h3>6. Desktop Vacation Package & Trip Builder</h3>
+        <h3>6. Desktop Vacation Package &amp; Trip Builder</h3>
         <p>
           On desktop, the vacation package screen needed to support complex search behavior without
           overwhelming users. I redesigned the search panel and trip builder to:
@@ -320,7 +364,7 @@
 
       <!-- 7. Account & Login Updates -->
       <article class="cs-subsection">
-        <h3>7. Account & Login Flow</h3>
+        <h3>7. Account &amp; Login Flow</h3>
         <p>
           I also refined the login and registration screen to better support account creation and
           trust. Improvements included:
@@ -351,22 +395,34 @@
 
         <p><strong>Main House of Rock prototype:</strong></p>
         <p>
-          <a href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=2652%3A7639&scaling=scale-down&page-id=2652%3A7637" target="_blank" rel="noopener">
+          <a
+            href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=2652%3A7639&amp;scaling=scale-down&amp;page-id=2652%3A7637"
+            target="_blank"
+            rel="noopener"
+          >
             Open House of Rock prototype
           </a>
         </p>
 
         <p><strong>Trip Builder / Vacation Packages prototype:</strong></p>
         <p>
-          <a href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=3762%3A303&scaling=min-zoom&page-id=3751%3A9689" target="_blank" rel="noopener">
+          <a
+            href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=3762%3A303&amp;scaling=min-zoom&amp;page-id=3751%3A9689"
+            target="_blank"
+            rel="noopener"
+          >
             Open trip builder prototype
           </a>
         </p>
 
         <p><strong>Bandmates + travel package component prototype:</strong></p>
         <p>
-          <a href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=2402%3A228&scaling=min-zoom&page-id=2307%3A4349" target="_blank" rel="noopener">
-            Open Bandmates & package configuration prototype
+          <a
+            href="https://www.figma.com/proto/5Bz5Mn9PUEK31nzvNpr2TJ/House-of-Rock?node-id=2402%3A228&amp;scaling=min-zoom&amp;page-id=2307%3A4349"
+            target="_blank"
+            rel="noopener"
+          >
+            Open Bandmates &amp; package configuration prototype
           </a>
         </p>
 
@@ -423,9 +479,13 @@
     </nav>
   </main>
 
-  <footer class="cs-footer">
-    <p>© 2025 Shannon Wilson. All rights reserved.</p>
+  <!-- FULL-BLEED FOOTER BAND (matches Flying Wings/About) -->
+  <footer class="cs-footer-band">
+    <div class="cs-footer-band-inner">
+      <p class="cs-footer-thanks">Thank you for your interest in my work!</p>
+      <p class="cs-footer-note">© 2025 Shannon Wilson. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
-
