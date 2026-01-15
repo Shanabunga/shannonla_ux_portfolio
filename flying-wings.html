@@ -25,12 +25,12 @@
 
   <main class="cs-main">
 
-    <!-- FULL-BLEED HERO BAND (replaces cs-hero + proto-highlight) -->
+    <!-- FULL-BLEED HERO BAND -->
     <section class="cs-hero-band">
       <div class="cs-hero-band-inner">
         <div class="cs-hero-band-grid">
 
-          <!-- Left: Intro + Summary + Prototype CTA -->
+          <!-- Left: Intro only -->
           <div class="cs-hero-text">
             <p class="cs-label">UX Case Study</p>
             <h1>Flying Wings – White-Label Travel Design System</h1>
@@ -38,38 +38,10 @@
               Designing a complete end-to-end flight booking experience and the underlying design system
               so it could be rebranded and reused for multiple airline and travel partners.
             </p>
-
-            <div class="cs-summary" aria-label="Case study summary">
-              <h2 class="cs-summary-title">Summary</h2>
-              <ul class="cs-summary-list">
-                <li><strong>Outcome:</strong> End-to-end booking flow + reusable white-label design system.</li>
-                <li><strong>Primary value:</strong> Faster rebranding for new airline partners.</li>
-                <li><strong>Deliverable:</strong> Clickable high-fidelity prototype for demos + handoff.</li>
-              </ul>
-
-              <div class="cs-summary-actions">
-                <a
-                  class="cs-primary-btn"
-                  href="https://www.figma.com/proto/XHjMlDq7fsQRESGJkgU5tE/Flyingwings?node-id=201%3A0&amp;scaling=min-zoom&amp;page-id=27%3A35"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View final prototype <span aria-hidden="true">→</span>
-                </a>
-                <p class="cs-summary-note">Opens in a new tab.</p>
-              </div>
-            </div>
           </div>
 
-          <!-- Right: Prototype preview + Project Details -->
-          <aside class="cs-hero-media" aria-label="Prototype preview and project details">
-            <figure class="cs-hero-figure">
-              <img
-                src="assets/images/fw-figma-prototype.png"
-                alt="Flying Wings prototype overview"
-                loading="lazy"
-              />
-            </figure>
+          <!-- Right: Project Details FIRST, then image -->
+          <aside class="cs-hero-media" aria-label="Project details and prototype preview">
 
             <div class="cs-meta">
               <h2>Project Details</h2>
@@ -88,8 +60,31 @@
 
                 <dt>Tools</dt>
                 <dd>Figma, Balsamiq, Zoom</dd>
+
+                <dt>Deliverable</dt>
+                <dd>Clickable high-fidelity prototype for demos + handoff + reusable white-label design system.</dd>
               </dl>
+
+              <a
+                class="cs-primary-btn"
+                href="https://www.figma.com/proto/XHjMlDq7fsQRESGJkgU5tE/Flyingwings?node-id=201%3A0&amp;scaling=min-zoom&amp;page-id=27%3A35"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View final prototype <span aria-hidden="true">→</span>
+              </a>
+
+              <p class="cs-summary-note">Opens in a new tab.</p>
             </div>
+
+            <figure class="cs-hero-figure">
+              <img
+                src="assets/images/fw-figma-prototype.png"
+                alt="Flying Wings prototype overview"
+                loading="lazy"
+              />
+            </figure>
+
           </aside>
 
         </div>
@@ -425,86 +420,12 @@
     </nav>
   </main>
 
- <footer class="cs-footer-band">
-  <div class="cs-footer-band-inner">
-    <p class="cs-footer-thanks">Thank you for your interest in my work!</p>
-    <p class="cs-footer-note">© 2025 Shannon Wilson. All rights reserved.</p>
-      </div>
-    </footer>
-  
+  <footer class="cs-footer-band">
+    <div class="cs-footer-band-inner">
+      <p class="cs-footer-thanks">Thank you for your interest in my work!</p>
+      <p class="cs-footer-note">© 2025 Shannon Wilson. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <!-- HERO BAND styles (move to styles.css when ready) -->
-  <style>
-    /* Full-bleed band section */
-    .cs-hero-band{
-      background: #56EAE3;
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      padding: 3rem 0;
-    }
-
-    .cs-hero-band-inner{
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 1.25rem;
-    }
-
-    .cs-hero-band-grid{
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .cs-hero-figure{ margin: 0 0 1rem; }
-
-    .cs-hero-figure img{
-      display: block;
-      width: 100%;
-      border-radius: 18px;
-      background: #ffffff;
-      border: 1px solid rgba(0,0,0,.12);
-      box-shadow: 0 14px 30px rgba(0,0,0,.12);
-    }
-
-    .cs-summary{
-      margin-top: 1.5rem;
-      padding: 1.25rem;
-      border-radius: 18px;
-      background: rgba(255,255,255,.55);
-      border: 1px solid rgba(0,0,0,.08);
-      backdrop-filter: blur(6px);
-    }
-
-    .cs-summary-title{
-      margin: 0 0 .75rem;
-      font-size: 1.05rem;
-      letter-spacing: .2px;
-    }
-
-    .cs-summary-list{
-      margin: 0;
-      padding-left: 1.1rem;
-      line-height: 1.55;
-    }
-
-    .cs-summary-actions{
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
-    }
-
-    .cs-summary-note{
-      margin: 0;
-      font-size: .95rem;
-      opacity: .75;
-    }
-
-    @media (max-width: 900px){
-      .cs-hero-band-grid{ grid-template-columns: 1fr; }
-    }
-  </style>
 </body>
 </html>
