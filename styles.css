@@ -1113,46 +1113,7 @@ img[src*="fw-ds-theme-base"]{
 .case-quest-gasket .cs-hero-band {
   background: var(--primary-variant); /* #D1DEFF */
 
-  /* ================================
-   Full-bleed HERO BAND (robust)
-   ================================ */
 
-/* Prevent any horizontal clipping/scroll side effects */
-.case-study-body { overflow-x: hidden; }
-
-/* Full-bleed section that won’t shift incorrectly */
-.cs-hero-band{
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  width: 100vw;
-
-  padding: 3rem 0;
-  background: var(--secondary); /* default (Flying Wings) */
-}
-
-/* Inner container alignment */
-.cs-hero-band-inner{
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-/* Grid layout */
-.cs-hero-band-grid{
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2rem;
-  align-items: start;
-}
-
-@media (max-width: 900px){
-  .cs-hero-band-grid{ grid-template-columns: 1fr; }
-}
-
-}
 
 /* ================================
    Case study override: do NOT pad every <section>
@@ -1161,22 +1122,32 @@ img[src*="fw-ds-theme-base"]{
   padding: 0; /* prevents the hero band from overflowing/cropping */
 }
 
-/* ================================
-   Full-bleed hero band (shared)
-   ================================ */
+/* =========================================
+   HERO BAND (single source of truth)
+   ========================================= */
+
+/* Prevent full-bleed sections from creating horizontal scroll */
+.case-study-body { overflow-x: hidden; }
+
+/* IMPORTANT: global section padding breaks full-bleed; neutralize on case study pages */
+.case-study-body section { padding: 0; }
+
+/* Band */
 .cs-hero-band{
-  background: var(--cs-band, var(--secondary));
+  background: var(--hero-band-bg, var(--secondary)); /* default to Flying Wings */
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  padding: 3rem 0;
+  padding: 4.25rem 0; /* more band above/below */
 }
 
+/* Inner alignment */
 .cs-hero-band-inner{
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
 }
 
+/* Two-column grid */
 .cs-hero-band-grid{
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -1184,7 +1155,15 @@ img[src*="fw-ds-theme-base"]{
   align-items: start;
 }
 
-.cs-hero-figure{ margin: 0 0 1rem; }
+/* Right column: put Project Details ABOVE the image */
+.cs-hero-media{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cs-meta{ order: 1; }
+.cs-hero-figure{ order: 2; margin: 0; }
 
 .cs-hero-figure img{
   display: block;
@@ -1195,6 +1174,7 @@ img[src*="fw-ds-theme-base"]{
   box-shadow: 0 14px 30px rgba(0,0,0,.12);
 }
 
+/* Summary card */
 .cs-summary{
   margin-top: 1.5rem;
   padding: 1.25rem;
@@ -1204,65 +1184,15 @@ img[src*="fw-ds-theme-base"]{
   backdrop-filter: blur(6px);
 }
 
-.cs-summary-title{
-  margin: 0 0 .75rem;
-  font-size: 1.05rem;
-  letter-spacing: .2px;
-}
-
-.cs-summary-list{
-  margin: 0;
-  padding-left: 1.1rem;
-  line-height: 1.55;
-}
-
-.cs-summary-actions{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-}
-
-.cs-summary-note{
-  margin: 0;
-  font-size: .95rem;
-  opacity: .75;
-}
-
+/* Mobile */
 @media (max-width: 900px){
   .cs-hero-band-grid{ grid-template-columns: 1fr; }
 }
 
-/* ================================
-   Full-bleed HERO band (robust)
-   ================================ */
+/* =========================================
+   PER-PAGE HERO BAND COLOURS
+   ========================================= */
 
-/* Default band color (Flying Wings) */
-:root{
-  --hero-band-bg: #56EAE3;
-}
-
-/* Per-page overrides (you asked for House of Rock) */
-body.case-house-of-rock{
-  --hero-band-bg: #DD4657;
-}
-
-/* When you’re ready, add Quest Gasket like this:
-body.case-quest-gasket{
-  --hero-band-bg: #YOURCOLOR;
-}
-*/
-
-/* Prevent horizontal scrollbar caused by full-bleed sections */
-.case-study-body{
-  overflow-x: clip; /* modern */
-}
-@supports not (overflow: clip){
-  .case-study-body{ overflow-x: hidden; } /* fallback */
-}
-
-.cs-hero-band{
-  background: var(--hero-band-bg);
-
-
+body.case-flying-wings{ --hero-band-bg: var(--secondary); } /* #56EAE3 */
+body.case-house-of-rock{ --hero-band-bg: #DD4657; }
+body.case-quest-gasket{ --hero-band-bg: var(--primary-variant); } /* change later if desired */
