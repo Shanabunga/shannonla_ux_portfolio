@@ -1196,3 +1196,25 @@ img[src*="fw-ds-theme-base"]{
 body.case-flying-wings{ --hero-band-bg: var(--secondary); } /* #56EAE3 */
 body.case-house-of-rock{ --hero-band-bg: #DD4657; }
 body.case-quest-gasket{ --hero-band-bg: var(--primary-variant); } /* change later if desired */
+
+/* =========================================
+   Case study hero: Project details above image
+   (applies to ALL case studies)
+   ========================================= */
+
+.cs-hero-media{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cs-hero-media .cs-meta{
+  order: 1;
+}
+
+.cs-hero-media .cs-hero-figure{
+  order: 2;
+}
+
+
+  
